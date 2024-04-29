@@ -10,6 +10,14 @@ import jakarta.persistence.ManyToOne;
 @Entity
 public class Book {
 
+	public Book(String isbn, String title, String author, boolean available, Borrower borrower) {
+		super();
+		this.isbn = isbn;
+		this.title = title;
+		this.author = author;
+		this.available = available;
+		this.borrower = borrower;
+	}
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

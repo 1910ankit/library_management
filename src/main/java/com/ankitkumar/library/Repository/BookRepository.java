@@ -11,5 +11,7 @@ import com.ankitkumar.library.model.Book;
 public interface BookRepository extends JpaRepository<Book, Long> {
 	
 	List<Book> findByAvailableTrue();
+	
+	List<Book> findByIsbn(String isbn);
 
 }

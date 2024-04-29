@@ -3,12 +3,13 @@ package com.ankitkumar.library.service;
 import java.util.List;
 
 import com.ankitkumar.library.model.Book;
+import com.ankitkumar.library.model.Borrower;
 
 public interface BookService {
+	
+	Borrower registerBorrower(Borrower borrower);
 
 	Book registerBook(Book book);
-    
-    Book getBookById(Long id);
     
     List<Book> getAllAvailableBooks();
     

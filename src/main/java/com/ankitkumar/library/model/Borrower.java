@@ -31,6 +31,11 @@ public class Borrower {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	public Borrower(String name, String email) {
+		super();
+		this.name = name;
+		this.email = email;
+	}
     
     
 }
